@@ -12,6 +12,8 @@ options=('!strip' '!emptydirs')
 install=${pkgname}.install
 source_x86_64=("https://github.com/ente-io/ente/releases/download/auth-v2.0.50/ente-auth-v2.0.50-x86_64.deb")
 sha512sums_x86_64=('28ef28a6855ed3eb50c8cbbabb09cea89a2074bc5e1cf9783fb683ca88334e0ef217fd3c1b1c014876e82959769a5f69f7f8ce7e4f56c6d444782a355250cf66')
+provides=("ente-auth")
+conflicts=("ente-auth")
 
 package(){
 
