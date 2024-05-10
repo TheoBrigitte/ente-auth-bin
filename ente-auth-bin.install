@@ -1,9 +1,13 @@
 post_install() {
 	gtk-update-icon-cache -q -t -f usr/share/icons/hicolor
-	ln -s /usr/share/ente_auth/ente_auth /usr/bin/ente_auth
-	chmod +x /usr/bin/ente_auth
+	if [ ! -e /usr/bin/ente_auth ]; then
+		ln -s /usr/share/ente_auth/ente_auth /usr/bin/ente_auth
+		chmod +x /usr/bin/ente_auth
+	fi
 	update-desktop-database -q
-	ln -s /usr/lib/libsodium.so /usr/lib/libsodium.so.23
+	if [ ! -e /usr/lib/libsodium.so.23 ]; then
+		ln -s /usr/lib/libsodium.so /usr/lib/libsodium.so.23
+	fi
 }
 
 post_upgrade() {
