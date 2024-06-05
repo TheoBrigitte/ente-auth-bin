@@ -1,6 +1,6 @@
 # Maintainer: Alessandro Bernardello
 pkgname=ente-auth-bin
-pkgver=3.0.7
+pkgver=3.0.8
 pkgrel=1
 pkgdesc="Ente two-factor authenticator."
 arch=('x86_64')
@@ -10,7 +10,7 @@ depends=('at-spi2-core' 'ayatana-ido' 'cairo' 'desktop-file-utils' 'gcc-libs' 'g
 options=('!strip' '!emptydirs')
 install=${pkgname}.install
 source_x86_64=("https://github.com/ente-io/ente/releases/download/auth-v${pkgver}/ente-auth-v${pkgver}-x86_64.deb")
-sha512sums_x86_64=('ddf5b8bfbe91737146ab841d14547a1eade63e549a9d1c1ffd3982cde43057ba2c59a3058aa805ee9ef1de68e2edc0d697b0b52a969e997707ff67da3f21815c')
+sha512sums_x86_64=('c26bb76f4baa0fc31ea59db459c0ad9750b33a84fb5d77cff6fa021d849733a6b0fa0dd7e1a7009429fc7cdc9cdf72d120be98c9286d51ac2b42f699d21cbbb5')
 provides=("ente-auth")
 conflicts=("ente-auth")
 
