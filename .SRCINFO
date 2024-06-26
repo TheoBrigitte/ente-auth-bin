@@ -1,6 +1,6 @@
 pkgbase = ente-auth-bin
 	pkgdesc = Ente two-factor authenticator.
-	pkgver = 3.0.8
+	pkgver = 3.0.17
 	pkgrel = 1
 	url = https://github.com/ente-io/ente/tree/main/auth
 	install = ente-auth-bin.install
@@ -28,7 +28,7 @@ pkgbase = ente-auth-bin
 	conflicts = ente-auth
 	options = !strip
 	options = !emptydirs
-	source_x86_64 = https://github.com/ente-io/ente/releases/download/auth-v3.0.8/ente-auth-v3.0.8-x86_64.deb
-	sha512sums_x86_64 = c26bb76f4baa0fc31ea59db459c0ad9750b33a84fb5d77cff6fa021d849733a6b0fa0dd7e1a7009429fc7cdc9cdf72d120be98c9286d51ac2b42f699d21cbbb5
+	source_x86_64 = https://github.com/ente-io/ente/releases/download/auth-v3.0.17/ente-auth-v3.0.17-x86_64.deb
+	sha256sums_x86_64 = 8ad5befa3dca9a4f0862280183b1d9bb03f07010e25054d7f119df336dceea45
 
 pkgname = ente-auth-bin
