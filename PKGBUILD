@@ -16,4 +16,6 @@ conflicts=("ente-auth")
 
 package(){
 	tar -xJ -f data.tar.xz -C "${pkgdir}"
+  install -Dm644 "${startdir}/icons/hicolor/128x128/apps/ente_auth.png" "${pkgdir}/usr/share/icons/hicolor/128x128/apps/ente_auth.png"
+  install -Dm644 "${startdir}/icons/hicolor/256x256/apps/ente_auth.png" "${pkgdir}/usr/share/icons/hicolor/256x256/apps/ente_auth.png"
 }
